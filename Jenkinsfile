@@ -1,10 +1,9 @@
 pipeline {
-	agent {
-		docker { image 'node:7-alpine' }
-	}
+	agent any
 	stages {
-		stage('Test') {
-			sh -c 'echo $(hostname)'
+		stage('BuildGong') {
+			sh 'echo "Hello World"'
 		}
+
 	}
 }
