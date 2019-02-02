@@ -3,7 +3,7 @@ pipeline {
 		docker { image 'node:7-alpine' }
 	}
 	stages {
-		stage('Test-Gong') {
+		stage('Test') {
 			hostname
 		}
 	}
