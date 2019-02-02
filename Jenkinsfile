@@ -4,7 +4,7 @@ pipeline {
 	}
 	stages {
 		stage('Test') {
-			hostname
+			sh -c 'echo $(hostname)'
 		}
 	}
 }
