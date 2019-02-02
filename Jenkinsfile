@@ -1,11 +1,13 @@
 pipeline {
-	agent {
-		docker { image 'node:7-alpine' }
+	agent any
+	environment {
+		A=1
+		B=2
 	}
 	stages {
-		stage('BuildGongTest'){
+		stage('Build'){
 			steps {
-				sh 'node --version'
+				sh 'printenv'
 			}
 		}
 	}
