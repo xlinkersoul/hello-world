@@ -4,7 +4,7 @@ pipeline {
 	}
 	stages {
 		stage('Test-Gong') {
-			sh -c 'node --version'
+			hostname
 		}
 	}
 }
